@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# filename.py — Short description of project goes here.
+# add_loot.py — An exercise in uderstanding dictionaries.
 # For more information, see README.md
 
 from inventory import display_inventory
@@ -30,5 +30,5 @@ dragon_loot_1 = ["gold coin", "dagger", "gold coin", "gold coin", "ruby"]
 dragon_loot_2 = ["dagger", "ruby", "gold coin", "gold coin", "ruby"]
 dragon_loot_3 = ["broken dagger", "gold coin", "ruby", "vorpal sword"]
 
-finalInv = add_to_inventory(starting_inventory_1, dragon_loot_2)
-display_inventory(finalInv)
+final_inventory = add_to_inventory(starting_inventory_1, dragon_loot_2)
+display_inventory(final_inventory)
