@@ -28,11 +28,11 @@ def main():
 
 
 def add_to_inventory(inventory, loot):
-    for i, _ in enumerate(loot):
-        if loot[i] in inventory.keys():
-            inventory[loot[i]] = inventory.get(loot[i], 0) + 1
+    for item in loot:
+        if item in inventory.keys():
+            inventory[item] = inventory.get(item, 0) + 1
         else:
-            inventory.setdefault(str(loot[i]), 1)
+            inventory.setdefault(str(item), 1)
     return inventory
 
 
