@@ -12,7 +12,6 @@ logging.basicConfig(
 )
 logging.disable(logging.CRITICAL)  # Note out to enable logging.
 
-
 starting_inventory_1 = {"gold coin": 42, "rope": 1}
 starting_inventory_2 = {"rope": 2, "gold coin": 1337}
 starting_inventory_3 = {"vorpal sword": 1, "rope": 3, "gold coin": 42}
@@ -22,12 +21,12 @@ dragon_loot_2 = ["dagger", "ruby", "gold coin", "gold coin", "ruby"]
 dragon_loot_3 = ["broken dagger", "gold coin", "ruby", "vorpal sword"]
 
 
-def main():
+def main() -> None:
     final_inventory = add_to_inventory(starting_inventory_1, dragon_loot_2)
     display_inventory(final_inventory)
 
 
-def add_to_inventory(inventory, loot):
+def add_to_inventory(inventory: dict, loot: list) -> dict:
     for item in loot:
         if item in inventory.keys():
             inventory[item] = inventory.get(item, 0) + 1

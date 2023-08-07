@@ -21,11 +21,11 @@ stuff = {
 }
 
 
-def main():
+def main() -> None:
     display_inventory(stuff)
 
 
-def display_inventory(inventory):
+def display_inventory(inventory: dict) -> None:
     print("Inventory:")
     item_total = 0
     for k, v in sorted(inventory.items()):
